@@ -1,0 +1,214 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    height: 10%;
+}
+nav ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+}
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+.content {
+    position: absolute;
+    z-index: 0;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 90%;
+
+}
+.content .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.content .sub {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: url("background1.jpg");
+    background-size: 100% 100%;
+}
+.content .sub:last-child {
+    border-bottom: none;
+}
+#ctn {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+#ctn a {
+    position: absolute;
+    top: -60px;
+}
+.value {
+    background: #333;
+    width: 80%;
+    height: 100%;
+    opacity: 0.75;
+    z-index: 1;
+}
+.grid-container {
+    position: absolute;
+    right: 0;
+    display: inline-grid;
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+}
+.grid-item img{
+    width:100%;
+    height:100%;
+}
+#ctn .target-label {
+    position: absolute;
+    left: 0;
+    /* anchor offset + header height + header padding + header margins */
+    top: 0;
+    margin: 0 1;
+    z-index: 2;
+    width: 20%;
+    color: white;
+    border-right: 10px solid white;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-left: 10px solid white;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.avatar {
+    position: absolute;
+
+}
+.avatar .desc {
+    margin-left: -20%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.avatar img {
+    margin-top: 20%;
+    margin-left: -20%;
+    width: 90%;
+}
+
+body .story {
+    position: absolute;
+    background-image: url(bmo.png),linear-gradient(to bottom, rgba(17, 17, 17, 1), rgb(243, 235, 235),rgb(245, 238, 238));
+    left: 30%;
+    width: 40%;
+    height: 100%;
+    opacity: 0.2;
+}
+.nama {
+    margin-top: 20%;
+    width: 1em;
+}
+.about {
+    margin-top: 24%;
+}
+.about p {
+    width: 80%;
+}
+.global {
+    margin-top: 30%;
+}
+.fix {
+    position: absolute;
+    left: 35%;
+    width: 40%;
+    text-align: left;
+}
+table tr th {
+    width: 25%;
+}
+table {
+    width: 80%;
+}
+table b {
+    color: yellow;
+}
+.full{
+    width:100%;
+}
+
+.logo{
+    width:10%;
+    height:10%;
+}
+.skill{
+    margin-top:5%;
+    position: absolute;
+}
+.container{
+    background-image: linear-gradient(to bottom, rgba(17, 17, 17, 1), rgba(243, 235, 235,0.1),rgba(245, 238, 238,0.7)) ;
+} 
+.skill li {
+    display: inline-block;
+}
+.skill li .container i{
+    padding:25px;
+    font-size: 200px;
+}
+.skill li .container:hover h3{
+    opacity: 1;
+  }
+.icon {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+  }
+  .skill li .container h3{
+    position: absolute;
+    margin: auto;
+    opacity: 0;
+    transition: .3s ease;
+    margin-top:-50px;
+}
