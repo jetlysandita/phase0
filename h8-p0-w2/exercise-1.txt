@@ -1,0 +1,42 @@
+soal1
+set massaBenda with 600
+set percepatan with 2
+set resultanGaya with calculate massaBenda * percepatan
+display resultanGaya
+
+soal2
+read and set tahun
+if tahun / 4 is 0 then
+    if tahun /100 is not 0 then
+        display true
+    else 
+        if tahun / 400 is 0 then
+            display true
+        else 
+            display false
+        end
+    end
+else
+    display false
+end
+
+soal3
+set pakaian with 20
+set i with 0
+for i <=pakaian
+    i++
+end for
+if i is pakaian then
+    display "nyalakan mesin cuci"
+end
+
+soal4
+set siswa with 40
+set i with 0
+for i<=siswa
+    if siswa as i have long nail
+        siswa as i get penalty
+    else 
+        siswa as i get compliment
+    end if
+end for
