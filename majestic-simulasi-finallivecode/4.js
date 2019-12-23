@@ -42,10 +42,8 @@ function dividers(number) {
   //your code here
   var hasil=[]
   var temp=number
-  var help=1
-  while(number>0){
-    var newarr=[]
-    for(var i=help;i<help+3;i++){
+  var newarr=[]
+  for(var i=1;i<=number;i++){
       if(temp%i===0){
         newarr.push(i)
       }else{
@@ -53,10 +51,10 @@ function dividers(number) {
           newarr.push('*')
         }
       }
-    }
-    hasil.push(newarr)
-    number-=3
-    help+=3
+      if(newarr.length===3||i===number){
+        hasil.push(newarr)
+        newarr=[]
+      }
   }
   return hasil
 }

@@ -56,18 +56,23 @@ function multiplyTheOdds(arrOperand1, arrOperand2) {
   // your code here
   var length=arrOperand1.length>arrOperand2.length?arrOperand1.length:arrOperand2.length
   var hasil=length===0?0:1
+  var flag=true
   for(var i=0;i<length;i++){
     var bil1=arrOperand1[i]==null?0:arrOperand1[i]
     var bil2=arrOperand2[i]==null?0:arrOperand2[i]
     if((bil1*bil2)%2===1){
       hasil*=bil1*bil2
+      flag=false
     }
+  }
+  if(flag){
+    hasil=0
   }
   return hasil
 }
 
 console.log(multiplyTheOdds([3, 5, 2], [7, 5, 4])); //525
-console.log(multiplyTheOdds([1, 2], [1])); //1
+console.log(multiplyTheOdds([2, 2], [1])); //1
 console.log(multiplyTheOdds([1, 2, 3, 2], [3, 5])); //3
 console.log(multiplyTheOdds([7, 5, 8, 3], [9, 1, 2, 5, 9, 2])); //4725
 console.log(multiplyTheOdds([], [])); //0
